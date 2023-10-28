@@ -47,6 +47,7 @@ const ContextProvider = (props) =>{
                     flag = false;
                     return data;
                 }
+                else return data;
                 }))
         if(flag) {
             setCart([...cart , {...info , large : 1}]);
@@ -65,6 +66,7 @@ const ContextProvider = (props) =>{
                     flag = false;
                     return data;
                 }
+                else return data;
                 }))
         if(flag) {
             setCart([...cart , {...info , short : 1}]);
@@ -83,6 +85,7 @@ const ContextProvider = (props) =>{
                     flag = false;
                     return data;
                 }
+                else return data;
                 }))
         if(flag) {
             setCart([...cart , {...info , medium : 1}]);

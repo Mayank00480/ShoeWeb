@@ -15,6 +15,10 @@ const ItemList = () => {
                                                                             })                                                                    
         }}>{val.short}</button><button onClick = { () => {cntxt.reduceMediumQuantity(val.shoeName)
             setCartItems((prevState) => prevState + 1)  
+            cntxt.addMediumQuantity({
+                shoeName : val.shoeName,
+                shoePrice : val.shoePrice
+            }) 
         }}>{val.medium}</button><button onClick = { () => {cntxt.reduceLargeQuantity(val.shoeName)
             setCartItems((prevState) => prevState + 1) 
             cntxt.addLargeQuantity({
